@@ -3,8 +3,8 @@ package tests
 import (
 	"testing"
 
-	"salland1-metadata-wordpress/internal/parser"
-	"salland1-metadata-wordpress/pkg/utils"
+	"1zwolle-metadata-wordpress/internal/parser"
+	"1zwolle-metadata-wordpress/pkg/utils"
 )
 
 func TestParseHosts(t *testing.T) {

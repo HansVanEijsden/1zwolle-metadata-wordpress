@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"salland1-metadata-wordpress/internal/cache"
-	"salland1-metadata-wordpress/internal/fetcher"
-	"salland1-metadata-wordpress/internal/parser"
-	"salland1-metadata-wordpress/pkg/utils"
+	"1zwolle-metadata-wordpress/internal/cache"
+	"1zwolle-metadata-wordpress/internal/fetcher"
+	"1zwolle-metadata-wordpress/internal/parser"
+	"1zwolle-metadata-wordpress/pkg/utils"
 )
 
 type Handlers struct {
@@ -82,10 +82,10 @@ func (h *Handlers) RadioFmProgramme(w http.ResponseWriter, r *http.Request) {
 
 	var response string
 	if hostStr != "" {
-		response = fmt.Sprintf("15s:Dit is \\+33%s\\- met \\+36%s\\- op Salland1/15s:Check \\+WWSalland1.nl\\- voor het Sallandse nieuws",
+		response = fmt.Sprintf("15s:Dit is \\+33%s\\- met \\+36%s\\- op 1Zwolle/15s:Check \\+WW1Zwolle.nl\\- voor het Zwolse nieuws",
 			parsed.ShowName, hostStr)
 	} else {
-		response = fmt.Sprintf("15s:Nu \\+33%s\\- op \\+31Salland1\\-/15s:Check \\+WWSalland1.nl\\- voor het Sallandse nieuws",
+		response = fmt.Sprintf("15s:Nu \\+33%s\\- op \\+311Zwolle\\-/15s:Check \\+WW1Zwolle.nl\\- voor het Zwolse nieuws",
 			parsed.ShowName)
 	}
 
@@ -109,9 +109,9 @@ func (h *Handlers) RadioStreamProgramme(w http.ResponseWriter, r *http.Request) 
 
 	var response string
 	if hostStr != "" {
-		response = fmt.Sprintf("%s met %s op Salland1 Radio", parsed.ShowName, hostStr)
+		response = fmt.Sprintf("%s met %s op 1Zwolle Radio", parsed.ShowName, hostStr)
 	} else {
-		response = fmt.Sprintf("Nu %s op Salland1 Radio", parsed.ShowName)
+		response = fmt.Sprintf("Nu %s op 1Zwolle Radio", parsed.ShowName)
 	}
 
 	w.Header().Set("Content-Type", "text/plain; charset=utf-8")

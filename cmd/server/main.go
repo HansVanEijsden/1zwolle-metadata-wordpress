@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"salland1-metadata-wordpress/internal/cache"
-	"salland1-metadata-wordpress/internal/config"
-	"salland1-metadata-wordpress/internal/fetcher"
-	"salland1-metadata-wordpress/internal/handlers"
-	"salland1-metadata-wordpress/internal/logger"
+	"1zwolle-metadata-wordpress/internal/cache"
+	"1zwolle-metadata-wordpress/internal/config"
+	"1zwolle-metadata-wordpress/internal/fetcher"
+	"1zwolle-metadata-wordpress/internal/handlers"
+	"1zwolle-metadata-wordpress/internal/logger"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 
 	// Initialize logger
 	logger.Init(cfg.LogLevel)
-	slog.Info("Starting Salland1 Metadata WordPress service",
+	slog.Info("Starting 1Zwolle Metadata WordPress service",
 		"version", "1.0.0",
 		"source_url", cfg.SourceURL,
 		"fetch_interval", cfg.FetchInterval,

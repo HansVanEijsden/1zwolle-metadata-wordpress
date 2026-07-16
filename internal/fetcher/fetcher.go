@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"salland1-metadata-wordpress/internal/cache"
+	"1zwolle-metadata-wordpress/internal/cache"
 )
 
 type Fetcher struct {

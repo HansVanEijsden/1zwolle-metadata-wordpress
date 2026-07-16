@@ -1,16 +1,16 @@
 services:
-  salland1-metadata-wordpress:
+  1zwolle-metadata-wordpress:
     build: .
-    container_name: salland1-metadata-wordpress
+    container_name: 1zwolle-metadata-wordpress
     environment:
-      - SOURCE_URL=https://www.salland1.nl/wp-json/metadata/v1/current
+      - SOURCE_URL=https://1zwolle.nl/wp-json/metadata/v1/current
       - FETCH_INTERVAL=60s
       - JITTER=10s
       - PORT=8080
       - LOG_LEVEL=info
     networks:
       metanet:
-        ipv4_address: 172.21.0.91
+        ipv4_address: 172.21.0.92
     restart: unless-stopped
     logging:
       driver: "json-file"

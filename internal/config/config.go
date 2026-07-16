@@ -16,7 +16,7 @@ type Config struct {
 
 func Load() *Config {
 	port := getEnvInt("PORT", 8080)
-	sourceURL := getEnv("SOURCE_URL", "https://www.salland1.nl/wp-json/metadata/v1/current")
+	sourceURL := getEnv("SOURCE_URL", "https://1zwolle.nl/wp-json/metadata/v1/current")
 	fetchInterval := getEnvDuration("FETCH_INTERVAL", 60*time.Second)
 	jitter := getEnvDuration("JITTER", 10*time.Second)
 	logLevel := getEnv("LOG_LEVEL", "info")

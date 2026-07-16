@@ -1,3 +1,3 @@
-module salland1-metadata-wordpress
+module 1zwolle-metadata-wordpress
 
 go 1.21
