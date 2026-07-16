@@ -1,5 +1,8 @@
 # 1Zwolle Metadata WordPress Service
 
+[![CI](https://github.com/HansVanEijsden/1zwolle-metadata-wordpress/actions/workflows/ci.yml/badge.svg)](https://github.com/HansVanEijsden/1zwolle-metadata-wordpress/actions/workflows/ci.yml)
+[![Security](https://github.com/HansVanEijsden/1zwolle-metadata-wordpress/actions/workflows/security.yml/badge.svg)](https://github.com/HansVanEijsden/1zwolle-metadata-wordpress/actions/workflows/security.yml)
+
 A lightweight HTTP service that fetches, caches, and transforms metadata from the 1Zwolle WordPress API.
 
 ## Features
