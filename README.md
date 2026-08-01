@@ -44,7 +44,7 @@ Environment variables:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SOURCE_URL` | `https://1zwolle1.nl/wp-json/metadata/v1/current` | WordPress API URL |
+| `SOURCE_URL` | `https://1zwolle.nl/wp-json/metadata/v1/current` | WordPress API URL |
 | `FETCH_INTERVAL` | `60s` | Fetch interval |
 | `JITTER` | `10s` | Random jitter for fetch timing |
 | `PORT` | `8080` | HTTP server port |
