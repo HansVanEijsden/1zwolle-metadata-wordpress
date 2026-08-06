@@ -8,6 +8,14 @@ services:
       - JITTER=10s
       - PORT=8080
       - LOG_LEVEL=info
+      # Cover-art resolver (replaces cloud.hansvaneijsden.nl cover-art-1zwolle.php)
+      # COVERART_SPECIAL_TRIGGER/URL intentionally not set: 1Zwolle's special-song
+      # plugin is not active yet. Set them (e.g. "1Zwolleschijf - ") when it goes live.
+      - COVERART_ENABLED=true
+      - COVERART_HUB_URL=http://172.21.0.38:9000
+      - COVERART_HUB_INPUT=radio-cover-art
+      - COVERART_HUB_SECRET=bestwelgeheim
+      - COVERART_FALLBACK_IMAGE=https://1zwolle.nl/wp-content/uploads/sites/1/2025/10/Non-Stop-1024x1024.jpg
     networks:
       metanet:
         ipv4_address: 172.21.0.92
