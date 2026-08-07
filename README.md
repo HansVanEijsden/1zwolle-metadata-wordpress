@@ -68,7 +68,7 @@ Relevant env vars (all prefixed `COVERART_`): `HUB_URL`, `HUB_INPUT`, `HUB_SECRE
 ### Using Docker Compose
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Manual Build
@@ -99,7 +99,7 @@ All requests and system events are logged in JSON format to stdout. Docker Compo
 
 ## Dependencies
 
-- Go 1.21+
+- Go 1.26
 - Docker
 - Docker Compose
 
@@ -115,7 +115,7 @@ This complete solution provides:
 4. **Health Checks**: Proper health endpoint that validates both server and data availability
 5. **Comprehensive Logging**: JSON-structured logs for all operations
 6. **Unit Tests**: Tests for host formatting, time formatting, missing fields, and malformed JSON
-7. **Docker Ready**: Complete Dockerfile and docker-compose configuration
+7. **Docker Ready**: Complete Dockerfile and Docker Compose configuration
 8. **Configuration**: Environment variable based configuration
 9. **Low Resource Usage**: Go's minimal memory footprint and fast startup
 
